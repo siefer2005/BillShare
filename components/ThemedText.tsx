@@ -21,11 +21,11 @@ export function ThemedText({
     <Text
       style={[
         { color },
-        type === 'default' ? styles.default : undefined,
-        type === 'title' ? styles.title : undefined,
-        type === 'defaultSemiBold' ? styles.defaultSemiBold : undefined,
-        type === 'subtitle' ? styles.subtitle : undefined,
-        type === 'link' ? styles.link : undefined,
+        type === 'default' ? [styles.default, { fontFamily: 'PTSans_400Regular' }] : undefined,
+        type === 'title' ? [styles.title, { fontFamily: 'PTSans_700Bold' }] : undefined,
+        type === 'defaultSemiBold' ? [styles.defaultSemiBold, { fontFamily: 'PTSans_700Bold' }] : undefined,
+        type === 'subtitle' ? [styles.subtitle, { fontFamily: 'PTSans_700Bold' }] : undefined,
+        type === 'link' ? [styles.link, { fontFamily: 'PTSans_400Regular' }] : undefined,
         style,
       ]}
       {...rest}
